@@ -1,0 +1,29 @@
+ 
+//  convert Celsius to Fahrenheit
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+}
+function fahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5/9; 
+}
+
+let choice = prompt("Enter '1'for convert celsius To Fahrenheit\n Enter '2' for convert Fahrenheit To celsius");
+
+if (choice == "1"){
+    let celsius = prompt("Enter temperature in Celsius:");
+
+   
+    
+    let fahrenheit = celsiusToFahrenheit(Number(celsius));
+    console.log(celsius + " C to " + fahrenheit + " F");
+    }
+
+ else if (choice == "2") { 
+    let fahrenheit = prompt("Enter temperature in Fahrenheit:"); 
+  
+      let celsius = fahrenheitToCelsius(Number(fahrenheit)); 
+    console.log(fahrenheit + " F to " + celsius + " C")
+}
+ else {
+    console.log("Invalid choice Please enter 1 or 2.");
+ }
